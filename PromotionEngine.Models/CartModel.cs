@@ -37,7 +37,7 @@ namespace PromotionEngine.Models
     /// <summary>
     /// Cart Item
     /// </summary>
-    public class CartItem
+    public class CartItem : ICloneable
     {
         /// <summary>
         /// Gets or sets the sku.
@@ -53,5 +53,10 @@ namespace PromotionEngine.Models
         /// The quantity.
         /// </value>
         public int Quantity { get; set; }
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 }

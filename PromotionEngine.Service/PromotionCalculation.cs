@@ -27,6 +27,8 @@ namespace PromotionEngine.Service
         public double CalculateDiscount(IEnumerable<SKUModel> skus, IEnumerable<PromotionModel> promotions, CartModel cart)
         {
             double totalAmountDiscount = 0;
+
+            var _cartItemsForPromotionProcessing = this.Clone<CartItem>(cart.CartItems).ToList();
             foreach (var promotion in promotions)
             {
                 bool promotionMatched = false;
@@ -35,14 +37,14 @@ namespace PromotionEngine.Service
 
                 //check if all the promotion items exists in cart
                 var promotionSKUsCount = promotion.PromotionItems.Count();
-                var matchedCartSKUs = promotion.PromotionItems.Select(x => x.SKU.SKUName).Intersect(cart.CartItems.Select(x => x.SKU.SKUName)).Count();
+                var matchedCartSKUs = promotion.PromotionItems.Select(x => x.SKU.SKUName).Intersect(_cartItemsForPromotionProcessing.Select(x => x.SKU.SKUName)).Count();
 
                 if (promotionSKUsCount == matchedCartSKUs)
                 {
                     //check if promotionItems quantity matches the cart items quantity
                     foreach (var promotionItem in promotion.PromotionItems)
                     {
-                        var cartSKUItemQuantity = cart.CartItems.Find(x => x.SKU.SKUName.Equals(promotionItem.SKU.SKUName)).Quantity;
+                        var cartSKUItemQuantity = _cartItemsForPromotionProcessing.Find(x => x.SKU.SKUName.Equals(promotionItem.SKU.SKUName)).Quantity;
                         if (cartSKUItemQuantity >= promotionItem.Quantity)
                         {
                             howManyTimePromotionNeedToApply = cartSKUItemQuantity / promotionItem.Quantity;
@@ -80,6 +82,11 @@ namespace PromotionEngine.Service
         public void Dispose()
         {
             GC.SuppressFinalize(this);
+        }
+
+        private IList<T> Clone<T>(IList<T> listToClone) where T : ICloneable
+        {
+            return listToClone.Select(item => (T)item.Clone()).ToList();
         }
     }
 }

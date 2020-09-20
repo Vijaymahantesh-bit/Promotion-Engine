@@ -194,7 +194,7 @@ namespace PromotionEngineConsole
 
                 cartModel.CartItems.Add(_cartItem);
 
-                Console.WriteLine("Do you want to add one more to SKU to cart? (Y/N) :");
+                Console.WriteLine("Do you want to add one more SKU to cart? (Y/N) :");
                 addMoreSKUToCart = GetYesOrNoConfirmation();
             }
 
