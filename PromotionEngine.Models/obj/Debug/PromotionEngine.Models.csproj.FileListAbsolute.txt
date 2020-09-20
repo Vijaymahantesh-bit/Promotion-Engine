@@ -1,0 +1,6 @@
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngine.Models\bin\Debug\PromotionEngine.Models.dll
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngine.Models\bin\Debug\PromotionEngine.Models.pdb
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngine.Models\obj\Debug\PromotionEngine.Models.csprojAssemblyReference.cache
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngine.Models\obj\Debug\PromotionEngine.Models.csproj.CoreCompileInputs.cache
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngine.Models\obj\Debug\PromotionEngine.Models.dll
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngine.Models\obj\Debug\PromotionEngine.Models.pdb

@@ -1,0 +1,12 @@
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\bin\Debug\PromotionEngineConsole.exe.config
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\bin\Debug\PromotionEngineConsole.exe
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\bin\Debug\PromotionEngineConsole.pdb
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\bin\Debug\PromotionEngine.Models.dll
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\bin\Debug\PromotionEngine.Models.pdb
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\obj\Debug\PromotionEngineConsole.csprojAssemblyReference.cache
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\obj\Debug\PromotionEngineConsole.csproj.CoreCompileInputs.cache
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\obj\Debug\PromotionEngineConsole.csproj.CopyComplete
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\obj\Debug\PromotionEngineConsole.exe
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\obj\Debug\PromotionEngineConsole.pdb
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\bin\Debug\PromotionEngine.Service.dll
+C:\Users\Vijayamahantesh\source\repos\PromotionEngineApp\PromotionEngineConsole\bin\Debug\PromotionEngine.Service.pdb
