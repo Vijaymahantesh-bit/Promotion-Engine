@@ -66,7 +66,7 @@ namespace PromotionEngine.Service
                     }
                     else
                     {
-                        totalAmountDiscount += (promotionItemsTotal - (promotionItemsTotal * promotion.DiscountPrice) / 100)
+                        totalAmountDiscount += ((promotionItemsTotal * promotion.DiscountPrice) / 100)
                             * howManyTimePromotionNeedToApply;
                     }
                 }
