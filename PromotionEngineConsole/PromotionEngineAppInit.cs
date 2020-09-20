@@ -72,7 +72,7 @@ namespace PromotionEngineConsole
                     case 3: BuySKUs(); break;
                     case 4: ViewSKusAndPromotions(); break;
                     case 5: break;
-                    default: Console.WriteLine("Invalid selection.!"); break;
+                    default: Console.WriteLine("Invalid selection.!"); Console.ReadKey(); break;
                 }
             }
             catch (Exception ex)
@@ -154,11 +154,11 @@ namespace PromotionEngineConsole
                 }
 
 
-                Console.WriteLine("Select Promotion Discount Type \n (1) Fixed Price Discount \n (2) Percentage Discount");
+                Console.WriteLine("Select Promotion Discount Type \n (1) Fixed Price Discount (Offer Price) \n (2) Percentage Discount");
                 _promotionModel.DiscountType = (DiscountType)Convert.ToInt16(Console.ReadLine());
 
                 if (_promotionModel.DiscountType == DiscountType.FixedPrice)
-                    Console.WriteLine("Enter Fixed Price Discount:");
+                    Console.WriteLine("Enter Fixed Price (Offer Price) Discount:");
                 else
                     Console.WriteLine("Enter Discount Percentage:");
 
